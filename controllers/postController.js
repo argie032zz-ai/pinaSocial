@@ -7,7 +7,7 @@ exports.createPost = (req, res) => {
     return res.status(400).json({ message: "Username and content required" });
   }
   const post = { username, content, createdAt: new Date() };
-  post.push(post);
+  posts.push(post);
   res.status(201).json({ message: "Post created", post });
 };
 

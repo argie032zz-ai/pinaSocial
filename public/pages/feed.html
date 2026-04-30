@@ -1,26 +1,30 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feed - pinaSocial</title>
-    <link rel="stylesheet" href="" />
-    <link rel="icon" type="image/png" href="" />
-  </head>
-  <body>
-    <div class="navbar">
-      <h2>pinaSocial</h2>
-      <button class="logout" onclick="logout()">Log out</button>
-    </div>
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Feed - pinaSocial</title>
+      <link rel="stylesheet" href="../css/feed.css" />
+      <link rel="icon" type="image/png" href="" />
+    </head>
+    <body>
+      <div class="navbar">
+        <h2>pinaSocial</h2>
+        <button class="logout" onclick="logout()">Log out</button>
+      </div>
 
-    <div class="post-form">
-      <textarea id="post-content" placeholder="What's on your mind?"></textarea>
-      <button onclick="">Post</button>
-    </div>
+      <div class="post-form">
+        <textarea
+          id="post-content"
+          placeholder="What's on your mind?"
+        ></textarea>
+        <button onclick="createPost()">Post</button>
+      </div>
 
-    <div class="post-container" id="post-list"></div>
+      <div class="post-container" id="post-list"></div>
 
-    <script src=""></script>
-    <script src="../js/utils.js"></script>
-  </body>
-</html>
+      <script src="../js/feed.js"></script>
+      <script src="../js/utils.js"></script>
+    </body>
+  </html>
+</doctype>
