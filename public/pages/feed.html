@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Feed - pinaSocial</title>
+      <link rel="stylesheet" href="../css/feed.css" />
+      <link rel="icon" type="image/png" href="../img/feed.png" />
+    </head>
+    <body>
+      <div class="navbar">
+        <h2>pinaSocial</h2>
+        <button class="logout" onclick="logout()">Log out</button>
+      </div>
+
+      <div class="post-form">
+        <textarea
+          id="post-content"
+          placeholder="What's on your mind?"
+        ></textarea>
+        <button class="post" onclick="createPost()">Post</button>
+      </div>
+
+      <div class="post-container" id="post-list"></div>
+
+      <script src="../js/feed.js"></script>
+      <script src="../js/utils.js"></script>
+    </body>
+  </html>
+</doctype>

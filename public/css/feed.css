@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #301934;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .navbar {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    background-color: #7851a9;
+    color: #e6e6fa;
+    padding: 15px;
+  }
+  button {
+    background-color: #603fef;
+    color: #e6e6fa;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .logout {
+    background-color: #ff3737;
+    color: #e6e6fa;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .logout:hover {
+    background-color: darkred;
+    animation: shake3856 0.3s linear infinite both;
+  }
+}
+
+.post-form {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  textarea {
+    width: 70%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #e6e6fa;
+    border: 1px solid #b65fcf;
+    background-color: #b65fcf;
+  }
+  textarea::placeholder {
+    color: #e6e6fa;
+    font-size: larger;
+  }
+  button {
+    flex-shrink: 0;
+  }
+}
+
+.post-container {
+  flex-grow: 1;
+  overflow: auto;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.post-card {
+  background-color: #b65fcf;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #934eae;
+  margin-bottom: 10px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  color: #e6e6fa;
+  border-bottom: 1px solid #ccc;
+  b {
+    font-size: 16px;
+  }
+}
+
+.post-content {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e6e6fa;
+  border-bottom: 1px solid #ccc;
+}
+
+.post-date {
+  color: #e6e6fa;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+@keyframes shake3856 {
+  0%,
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+}
